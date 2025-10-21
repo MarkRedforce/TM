@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8" >
+    <title>TM</title> <!--Changed the title-->
+    <link href="CSS/Style.css" rel="stylesheet" >
+    <link rel="icon" type="image/png" href="Images\Icones\Logo TM.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navigation">
+        <div>
+         <a href="index.html"><img src="Images/Icones/Logo TM_Black.png" alt="Logo" title="Acceuil"></a>
+        </div>
+          <div class="icons">
+            <a href="HTML/cart.html"><img src="Images/Icones/shopping-cart.png" alt="Cart" title="Cart"></a>
+            <a href="HTML/Favoris.html"><img src="Images/Icones/star.png" alt="favorite" title="Favorite"></a>
+            <a href="#" id="profileLink">
+              <img src="Images/Icones/people.png" alt="account" title="Profile">
+            </a>
+
+          </div>
+      </div>
+    </nav>
+  </header>
+
+<main class="homme_et_femme">
+    <section>
+       <a href="HTML/Shop.html?category=homme" class="H">
+        <img src="Images/Shop/bershka-MAN-Key-Looks-AW16-fy1.jpg" alt="T-shirt pour homme"> 
+         <h1> HOMME </h1>
+      </a>
+    </section>
+    <section>
+       <a href="HTML/Shop.html?category=femme" class="H">
+        <img src="Images/Shop/06091662605-p.jpg" alt="T-shirt pour femme">
+        <h1> FEMME </h1>
+      </a>
+    </section>
+  </main>
+
+<footer>
+  <!-- Newsletter -->
+<div> <p>Let's stay in touch! Sign up to our<br> newsletter and get the best deals!
+   <div class="socials"> 
+    <a href="index.html" class="logo"><img src="Images\Icones\Logo TM_Black.png" alt="Index" title="Retour à l'Acceuil"></a> 
+    <div> 
+      <a href="https://www.facebook.com"><img src="Images/Icones/FB.png" alt="Facebook" title="Facebook"></a> 
+      <a href="https://www.instagram.com/?hl=en"><img src="Images/Icones/Inst.png" alt="Instagram" title="Instagram"></a> 
+      <a href="https://x.com"><img src="Images/Icones/X.webp" alt="X" title="Twitter"></a> 
+    </div>
+  </div> 
+</div>
+
+  <!-- Form + Table -->
+  <div>
+    <div class="email">
+      <div>
+        <label for="email">Insert your email address here</label><br>
+        <input type="email" id="email" name="email" placeholder="">
+      </div>        
+    <input type="submit" value="Subscribe now">
+  </div>
+
+    <table>
+      <tr>
+        <th>Help</th>
+        <th>Other</th>
+      </tr>
+      <tr>
+        <td>FAQ</td>
+        <td>Privacy Policy</td>
+      </tr>
+      <tr>
+        <td>Customer service</td>
+        <td>Sitemapp</td>
+      </tr>
+      <tr>
+        <td>How to guides</td>
+        <td>Subscriptions</td>
+      </tr>
+      <tr>
+        <td>Contact us</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</footer>
+  <script src="JAVASCRIPT\profile.js"></script>
+  <!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+  <script src="JAVASCRIPT/Shop.js"></script>
+  <script src="JAVASCRIPT\Index.js"></script>
+</body>
+
+</html>
