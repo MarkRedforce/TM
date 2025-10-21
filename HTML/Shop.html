@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8" >
+    <title>TM</title> <!--Changed the title-->
+    <link href="../CSS/Shop.css" rel="stylesheet" >
+    <link rel="icon" type="image/png" href="../Images/Icones/Logo TM.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navigation">
+        <div>
+         <a href="../index.html"><img src="../Images\Icones\Logo TM_Black.png" alt="Logo" title="Acceuil"></a>
+        </div>
+         <input type="text" id="text" name="text" placeholder="Search">
+          <div class="icons">
+            <a href="../HTML/cart.html" class="cart-link">
+  <img src="../Images/Icones/shopping-cart.png" alt="Cart" title="Cart">
+  <span id="cartCount" class="count-dot">0</span>
+</a>
+            <div class="favorite-wrapper">
+              <a href="../HTML/Favoris.html">
+                <img src="../Images/Icones/star.png" alt="favorite" title="Favorite">
+              </a>
+              <span class="favoris-count" id="favorisCount">0</span>
+            </div>
+            <a href="../HTML/account.html"><img src="../Images/Icones/people.png" alt="account" title="Profile"></a>
+          </div>
+      </div>
+    </nav>
+  <div> 
+       <p class="filter2"> Filter </p>
+        </div>
+          <div class="filter">
+            <form method="get" action="">
+        <p>
+          <label for="Gender"> Type </label><br>
+            <select name="Gender" id="Gender">
+                <option value="all">All</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="teen">Teenagers</option>
+                <option value="kids">Kids</option>
+            </select>
+        </p>
+    </form>
+    <form method="get" action="">
+        <p>
+          <label for="Sort"> Sort </label><br>
+            <select name="Sort" id="Sort">
+                <option value="High price">By high price</option>
+                <option value="Low price">By low price</option>
+                <option value="New">What's new!</option>
+            </select>
+        </p>
+    </form>
+    <form method="get" action="">
+        <p>
+          <label for="Size"> Size </label><br>
+<select name="Size" id="Size">
+    <option value="all">All</option>
+    <option value="xxs">26 - 30 (XXS)</option>
+    <option value="xs">30 - 34 (XS)</option>
+    <option value="s">34 - 36 (S)</option>
+    <option value="m">38 - 40 (M)</option>
+    <option value="l">42 - 44 (L)</option>
+    <option value="xl">44 - 46 (XL)</option>
+    <option value="xxl">46 - 48 (XXL)</option>
+    <option value="xxxl">48 - 50 (XXXL)</option>
+</select>
+        </p>
+    </form>
+    <form method="get" action="">
+        <p>
+         <label for="Color"> Color </label><br>
+<select name="Color" id="Color">
+    <option value="all">All</option>
+    <option value="white">White</option>
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="purple">Purple</option>
+    <option value="pink">Pink</option>
+    <option value="yellow">Yellow</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select>
+        </p>
+    </form>
+</div>
+  </header>
+
+      <main>
+        <section class="section-product">
+          <div class="grid-product" id="productGrid"></div> 
+        </section>
+    </main>
+
+<footer>
+  <!-- Newsletter -->
+<div> <p>Let's stay in touch! Sign up to our<br> newsletter and get the best deals!
+   <div class="socials"> 
+    <a href="../index.html" class="logo"><img src="../Images/Icones/Logo TM_Black.png" alt="Index" title="Retour à l'Acceuil"></a> 
+    <div> 
+      <a href="https://www.facebook.com"><img src="../Images/Icones/FB.png" alt="Facebook" title="Facebook"></a> 
+      <a href="https://www.instagram.com/?hl=en"><img src="../Images/Icones/Inst.png" alt="Instagram" title="Instagram"></a> 
+      <a href="https://x.com"><img src="../Images/Icones/X.webp" alt="X" title="Twitter"></a> 
+    </div>
+  </div> 
+</div>
+
+  <!-- Form + Table -->
+  <div>
+    <div class="email">
+      <div>
+        <label for="email">Insert your email address here</label><br>
+        <input type="email" id="email" name="email" placeholder="">
+      </div>        
+    <input type="submit" value="Subscribe now">
+  </div>
+
+    <table>
+      <tr>
+        <th>Help</th>
+        <th>Other</th>
+      </tr>
+      <tr>
+        <td>FAQ</td>
+        <td>Privacy Policy</td>
+      </tr>
+      <tr>
+        <td>Customer service</td>
+        <td>Sitemapp</td>
+      </tr>
+      <tr>
+        <td>How to guides</td>
+        <td>Subscriptions</td>
+      </tr>
+      <tr>
+        <td>Contact us</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</footer>
+
+  <script src="../JAVASCRIPT/Shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+}
+
+*{
+  scrollbar-width: thin;
+  scrollbar-color: black white;
+}
+
+body{
+  font-family: "Yantramanav", sans-serif;
+}
+
+nav{
+  border-bottom: solid rgb(0, 0, 0);
+}
+
+.navigation{
+justify-content: space-between;
+display: flex;
+padding: 20px;
+}
+
+nav input{
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: solid rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+.icons img {
+  margin: 10px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav img{
+  width: 40px;
+  height: 40px;
+}
+
+.homme_et_femme {
+font-size: 3em;
+font-weight: 700;
+margin: auto;
+padding-left: 50px;
+padding-top: 50px;
+padding-right: 50px;
+display: flex;
+justify-content: space-around;
+}
+
+.H {
+  width: 600px;
+  height: 650px;
+  position: relative; 
+  display: block;
+  overflow: hidden;
+}
+
+.H img {
+  width: 600px;
+  height: 650px;
+  object-fit: none;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.H h1 {
+  position: absolute;
+  inset: 0; /* replace top:0; left:0; right:0; bottom:0 */
+  display: flex;
+  justify-content: center; /*  horizontal */
+  align-items: center;     /* vertical */
+  color: white;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.H:hover img {
+  transform: scale(1.05);
+}
+
+footer{ 
+    color: rgb(0, 0, 0); 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+footer p{
+  margin-bottom: 30px;
+}
+
+.email{
+  display: flex; 
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+footer input[type="email"] {
+  padding: 5px;
+  border: none;
+  margin-right: 8px;
+  background-color: transparent;
+  border-bottom: solid rgb(0, 0, 0);
+  width: 250px;
+}
+
+footer input[type="submit"] {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: solid rgb(0, 0, 0);
+  width: 160px;
+  height: 40px;
+}
+
+table th, table td {
+  text-align: left;
+  padding: 4px 8px;
+}
+
+.socials img{
+  width: 24px;
+  height: 24px;
+}
+
+.logo img{
+  width: 80px;
+  height: 80px;
+}
+
+/* The modal background */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent black */
+}
+
+/* The box inside */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Close (×) button */
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Style the login form */
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #444;
+}
+
+@media (max-width: 1024px) {
+  .homme_et_femme {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 2em;
+  }
+
+  .H {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+  }
+
+  .H img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .H h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav input {
+    width: 50%;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .icons{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .navigation img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .email {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer input[type="email"] {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  footer input[type="submit"] {
+    width: auto;
+  }
+
+  table {
+    margin: 20px 0;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+  }
+
+  .socials img {
+    width: 50px;
+    height: 50px;
+  }
+}

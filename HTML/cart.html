@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8" >
+    <title>TM</title> <!--Changed the title-->
+    <link href="../CSS\cart.css" rel="stylesheet" >
+    <link rel="icon" type="image/png" href="../Images/Icones/Logo TM.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navigation">
+        <div>
+         <a href="../index.html"><img src="../Images/Icones/Logo TM_Black.png" alt="Logo" title="Acceuil"></a>
+        </div>
+         <input type="text" id="text" name="text" placeholder="Search">
+          <div class="icons">
+            <a href="../HTML/cart.html"><img src="../Images/Icones/shopping-cart.png" alt="Cart" title="Cart"></a>
+            <a href="../HTML/Favoris.html"><img src="../Images/Icones/star.png" alt="favorite" title="Favorite"></a>
+            <a href="../HTML/account.html"><img src="../Images/Icones/people.png" alt="account" title="Profile"></a>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+    <h1>My shopping bag</h1>
+        <div class="cart-list">
+            <div class="cart-item">
+            <img class="product__img" src="../Images/Shop/Simple tshirt (white).webp" alt="Product">
+            <div class="product__info">
+                <div class="product__name">Name product</div>
+                <div class="product__price">€29.90</div>
+                <div class="qty">
+                  <button class="qty__btn">−</button>
+                  <div class="qty__value">1</div>
+                  <button class="qty__btn">+</button>
+                </div>
+            </div>
+            </div>
+
+            <div class="cart-item">
+            <img class="product__img" src="../Images/Shop/Simple tshirt (white).webp" alt="Product">
+            <div class="product__info">
+                <div class="product__name">Second product</div>
+                <div class="product__price">€15.90</div>
+                <div class="qty">
+                <button class="qty__btn">−</button>
+                <div class="qty__value">2</div>
+                <button class="qty__btn">+</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="total">
+      <div>
+        <span>Total</span>
+        <span>€</span>
+      </div>
+
+      <!-- Button go to payment -->
+      <button type="button" class="checkout-btn" value="Go to checkout" onclick="window.location.href='../HTML/payment.html'">
+        Go to checkout
+      </button>
+
+      <!-- Button back to Shop -->
+      <button type="button" class="back-btn" value="Back to store" onclick="window.location.href='../HTML/Shop.html'">
+        Back to store
+      </button>
+    </div>
+  </main>
+
+<footer>
+  <!-- Newsletter -->
+<div> <p>Let's stay in touch! Sign up to our<br> newsletter and get the best deals!
+   <div class="socials"> 
+    <a href="../index.html" class="logo"><img src="../Images/Icones/Logo TM_Black.png" alt="Index" title="Retour à l'Acceuil"></a> 
+    <div> 
+      <a href="https://www.facebook.com"><img src="../Images/Icones/FB.png" alt="Facebook" title="Facebook"></a> 
+      <a href="https://www.instagram.com/?hl=en"><img src="../Images/Icones/Inst.png" alt="Instagram" title="Instagram"></a> 
+      <a href="https://x.com"><img src="../Images/Icones/X.webp" alt="X" title="Twitter"></a> 
+    </div>
+  </div> 
+</div>
+
+  <!-- Form + Table -->
+  <div>
+    <div class="email">
+      <div>
+        <label for="email">Insert your email address here</label><br>
+        <input type="email" id="email" name="email" placeholder="">
+      </div>        
+    <input type="submit" value="Subscribe now">
+  </div>
+
+    <table>
+      <tr>
+        <th>Help</th>
+        <th>Other</th>
+      </tr>
+      <tr>
+        <td>FAQ</td>
+        <td>Privacy Policy</td>
+      </tr>
+      <tr>
+        <td>Customer service</td>
+        <td>Sitemapp</td>
+      </tr>
+      <tr>
+        <td>How to guides</td>
+        <td>Subscriptions</td>
+      </tr>
+      <tr>
+        <td>Contact us</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</footer>
+
+  <script src="../JAVASCRIPT\cart.js"></script>
+</body>
+
+</html>
