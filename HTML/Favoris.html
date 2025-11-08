@@ -21,10 +21,13 @@
         </div>
          <input type="text" id="text" name="text" placeholder="Search">
           <div class="icons">
-            <a href="../HTML/cart.html"><img src="../Images/Icones/shopping-cart.png" alt="Cart" title="Cart"></a>
+            <a href="../HTML/cart.html" class="cart-link">
+              <img src="../Images/Icones/shopping-cart.png" alt="Cart" title="Cart">
+              <span id="cartCount" class="count-dot">0</span>
+            </a>
             <div class="favorite-wrapper">
               <a href="../HTML/Favoris.html">
-                <img src="../Images/Icones/star.png" alt="favorite" title="Favorite">
+                <img src="../Images/Icones/star-empty.png" alt="favorite" title="Favorite">
               </a>
               <span class="favoris-count" id="favorisCount">0</span>
             </div>
@@ -36,58 +39,63 @@
        <p class="filter2"> Filter </p>
         </div>
           <div class="filter">
-            <form method="get" action="">
-        <p>
-          <label for="Gender"> Type </label><br>
-            <select name="Gender" id="Gender">
-                <option value="all">All</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="teen">Teenagers</option>
-                <option value="kids">Kids</option>
-            </select>
-        </p>
-    </form>
-    <form method="get" action="">
-        <p>
-          <label for="Sort"> Sort </label><br>
-            <select name="Sort" id="Sort">
-                <option value="High price">By high price</option>
-                <option value="Low price">By low price</option>
-                <option value="New">What's new!</option>
-            </select>
-        </p>
-    </form>
-    <form method="get" action="">
-        <p>
-          <label for="Size"> Size </label><br>
-            <select name="Size" id="Size">
-                <option value="XXS">26 - 30 (XXS)</option>
-                <option value="XS">30 - 34 (XS)</option>
-                <option value="S">34 - 36(S)</option>
-                <option value="M">38 - 40 (M)</option>
-                <option value="L">42 - 44 (L)</option>
-                <option value="XL">44 - 46 (XL)</option>
-                <option value="XXL">46 - 48 (XXL)</option>
-                <option value="XXXL">48 - 50 (XXXL)</option>
-            </select>
-        </p>
-    </form>
-    <form method="get" action="">
-        <p>
-          <label for="Color"> Color </label><br>
-            <select name="Color" id="Color">
-                <option value="white">White</option>
-                <option value="black">Black</option>
-                <option value="red">Red</option>
-                <option value="purple" class="purple">Purple</option>
-                <option value="pink">Pink</option>
-                <option value="yellow">Yellow</option>
-                <option value="blue">Blue</option>
-                <option value="green">Green</option>
-            </select>
-        </p>
-    </form>
+            <!-- Filters (use these exact ids so the JS finds them) -->
+<form method="get" action="">
+  <p>
+    <label for="filter-gender">Type</label><br>
+    <select name="Gender" id="filter-gender">
+      <option value="all">All</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="teen">Teenagers</option>
+      <option value="kids">Kids</option>
+    </select>
+  </p>
+</form>
+
+<form method="get" action="">
+  <p>
+    <label for="filter-sort">Sort</label><br>
+    <select name="Sort" id="filter-sort">
+      <option value="all">Default</option>
+      <option value="high">By high price</option>
+      <option value="low">By low price</option>
+      <option value="new">What's new!</option>
+    </select>
+  </p>
+</form>
+
+<form method="get" action="">
+  <p>
+    <label for="filter-size">Size</label><br>
+    <select name="Size" id="filter-size">
+      <option value="all">All sizes</option>
+      <option value="xxs">26 - 30 (XXS)</option>
+      <option value="xs">30 - 34 (XS)</option>
+      <option value="s">34 - 36 (S)</option>
+      <option value="m">38 - 40 (M)</option>
+      <option value="l">42 - 44 (L)</option>
+      <option value="xl">44 - 46 (XL)</option>
+    </select>
+  </p>
+</form>
+
+<form method="get" action="">
+  <p>
+    <label for="filter-color">Color</label><br>
+    <select name="Color" id="filter-color">
+      <option value="all">All</option>
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option>
+      <option value="yellow">Yellow</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </p>
+</form>
 </div>
   </header>
 
