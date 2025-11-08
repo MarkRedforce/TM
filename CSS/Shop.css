@@ -270,6 +270,16 @@ table th, table td {
   visibility: hidden;
 }
 
+.favorite-icon {
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.favorite-icon.active {
+  transform: scale(1.1);
+}
+
+
 /* --- Для экранов до 1200px --- */
 @media (max-width: 1200px) {
   .grid-product {
